@@ -1,0 +1,54 @@
+{
+  "name": "simple-webpack-starter",
+  "version": "0.1.0",
+  "description": "Simple webpack starter for ES6 and Sass",
+  "main": "dist/js/main.js",
+  "scripts": {
+    "build": "webpack --env dev && webpack --env build && npm run test",
+    "build:no-test": "webpack --env dev && webpack --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --require babel-register --colors ./test/*.spec.js",
+    "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Anthony Simone",
+  "contributors": [
+    {
+      "name": "Anthony Simone",
+      "email": "anthony.simone7@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "autoprefixer": "^9.1.5",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-register": "^6.26.0",
+    "browser-sync": "^2.18.6",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "chai": "^4.1.2",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.5.0",
+    "eslint-loader": "^2.1.0",
+    "extract-loader": "^3.0.0",
+    "file-loader": "^2.0.0",
+    "jsdom": "^12.0.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.9.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "uglifyjs-webpack-plugin": "^2.0.0",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0",
+    "yargs": "^12.0.2"
+  }
+}
